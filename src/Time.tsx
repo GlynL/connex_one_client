@@ -39,7 +39,7 @@ const Time = () => {
           <h2>Server Time</h2>
           <div>{data.epoch}</div>
           <h2>Server/Client Time Difference</h2>
-          <div>{timeDiff && formatTime(timeDiff)}</div>
+          <div>{timeDiff !== null && formatTime(timeDiff)}</div>
         </>
       )}
       {isLoading && <div className="loading">loading...</div>}
